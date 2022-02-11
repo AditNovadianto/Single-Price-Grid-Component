@@ -1,0 +1,154 @@
+/* * {
+  border: 1px solid red;
+} */
+
+html {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: var(--Light-Gray);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.container {
+  box-shadow: 0px 15px 35px hsla(216, 22%, 67%, 0.5);
+  max-width: max-content;
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.main-atas {
+  width: 550px;
+  padding: 20px;
+  max-width: max-content;
+  background-color: white;
+}
+
+.main-atas h1 {
+  color: var(--Cyan);
+  font-size: 25px;
+}
+
+.main-atas p.sub-judul {
+  font-size: 20px;
+  color: var(--Bright-Yellow);
+}
+
+.main-atas p {
+  color: var(--Grayish-Blue);
+}
+
+.main-bawah {
+  display: flex;
+}
+
+.main-akhir {
+  background-color: var(--Cyan);
+  padding: 25px 35px;
+  width: 100%;
+}
+
+.main-akhir.dua {
+  background-color: hsl(179, 45%, 55%);
+}
+
+.main-akhir.dua .tutorials {
+  width: 160px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.main-akhir h3 {
+  color: var(--Light-Gray);
+}
+
+.harga {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -30px;
+}
+
+.harga .dollar {
+  font-size: 30px;
+  color: var(--Light-Gray);
+  font-weight: bold;
+}
+
+.harga .month {
+  color: var(--Light-Gray);
+  font-size: 12px;
+}
+
+.main-akhir p.access {
+  font-size: 15px;
+  color: var(--Light-Gray);
+  margin-top: -25px;
+}
+
+.main-akhir button {
+  padding: 10px 87px;
+  border-radius: 5px;
+  border: none;
+  color: var(--Light-Gray);
+  background-color: var(--Bright-Yellow);
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px hsla(240, 7%, 27%, 0.5);
+}
+
+.main-akhir p.tutorials {
+  width: 225px;
+  color: var(--Light-Gray);
+  font-size: 15px;
+}
+
+@media (max-width: 500px) {
+  body {
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 60%;
+    margin: 50px auto;
+  }
+
+  .main-atas {
+    width: 100%;
+    padding: 15px 30px;
+  }
+
+  .main-atas h1 {
+    font-size: 20px;
+  }
+
+  .main-atas p.sub-judul {
+    font-size: 16px;
+  }
+
+  .main-atas p {
+    width: 250px;
+    font-size: 13px;
+    line-height: 25px;
+  }
+
+  .main-bawah {
+    display: block;
+  }
+}
